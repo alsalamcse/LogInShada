@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class register extends AppCompatActivity
 {
+    private static final String PREE_FILE_NAME="ShadaPref";
     private EditText user1;
     private  EditText password1;
     private EditText email;
@@ -28,7 +29,9 @@ public class register extends AppCompatActivity
     }
     public void onClick(View view){
         if (view==save){
-            SharedPreferences prefs= getSharedPreferences(  , MODE_PRIVATE)
+            SharedPreferences prefs= getSharedPreferences( PREE_FILE_NAME , MODE_PRIVATE);
+            SharedPreferences.Editor editor=
         }
     }
 }
+
